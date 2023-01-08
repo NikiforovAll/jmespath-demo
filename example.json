@@ -1,0 +1,36 @@
+{
+  "_id": "63ba60670fe420f2fb346866",
+  "index": 0,
+  "guid": "637a5a48-8acf-4495-9111-82d5d57e96d8",
+  "isActive": true,
+  "balance": "$2,285.51",
+  "picture": "http://placehold.it/32x32",
+  "age": 20,
+  "eyeColor": "blue",
+  "name": "Eva Sharpe",
+  "gender": "female",
+  "company": "ZAGGLES",
+  "email": "evasharpe@zaggles.com",
+  "phone": "+1 (950) 479-2130",
+  "address": "132 Amity Street, Kanauga, Rhode Island, 668",
+  "registered": "2023-01-08T08:07:44.1787922+00:00",
+  "latitude": 46.325291,
+  "longitude": 5.211461,
+  "tags": [
+    "ad",
+    "sunt",
+    "nulla"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Nielsen Casey",
+      "age": 19
+    },
+    {
+      "id": 1,
+      "name": "Carlene Long",
+      "age": 38
+    }
+  ]
+}
