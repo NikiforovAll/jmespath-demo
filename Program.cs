@@ -11,7 +11,7 @@ parser.FunctionRepository
     .Register<NowFunction>()
     .Register<DateFormatFunction>();
 
-var expresssions = new (string, string)[]
+var expressions = new (string, string)[]
 {
     ("scalar", "balance"),
     ("projection", "{email: email, name: name}"),
@@ -35,7 +35,7 @@ table.AddColumn("Example");
 table.AddColumn("Expression");
 table.AddColumn("Result");
 
-foreach (var (exampleName, expression) in expresssions)
+foreach (var (exampleName, expression) in expressions)
 {
     var result = parser.Transform(source, expression);
     table.AddRow(
