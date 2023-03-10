@@ -9,7 +9,8 @@ var source = new StreamReader("./example.json")
 var parser = new JmesPath();
 parser.FunctionRepository
     .Register<NowFunction>()
-    .Register<DateFormatFunction>();
+    .Register<DateFormatFunction>()
+    .Register<TimeDifferenceFunction>();
 
 var expressions = new (string, string)[]
 {
@@ -23,6 +24,11 @@ var expressions = new (string, string)[]
     ("now. Universal sortable date/time pattern", "now('u')"),
     ("now. Long date pattern", "now('D')"),
     ("format", "date_format(registered, 'd')"),
+    ("time difference. days > 3", "time_difference('days', now('u'), registered) > `3`"),
+    ("time difference. days < 30", "time_difference('days', now('u'), registered) < `30`"),
+    ("time difference. days", "time_difference('days', now('u'), registered)"),
+    ("time difference. hours", "time_difference('hours', now('u'), registered)"),
+    ("time difference. minutes", "time_difference('minutes', now('u'), registered)"),
 };
 
 var panel = new Panel(new JsonText(source.EscapeMarkup()));
